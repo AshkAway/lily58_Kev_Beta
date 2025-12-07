@@ -121,11 +121,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1                &kp N2              &kp N3              &kp N4                   &kp N5                    &kp N6  &kp N7               &kp N8             &kp N9             &kp N0                 &trans
-&kp TAB    &kp Q                 &LongPress LC(W) W  &kp E               &kp R                    &kp T                     &kp Y   &kp U                &kp I              &kp O              &kp P                  &trans
-&kp LCTRL  &HM_L LEFT_CONTROL A  &HM_L LEFT_ALT S    &HM_L LEFT_GUI D    &HR_ShiftL LEFT_SHIFT F  &kp G                     &kp H   &HM_R RIGHT_SHIFT J  &HM_R RIGHT_GUI K  &HM_R RIGHT_ALT L  &HM_R RIGHT_CONTROL H  &DbTap_Exclam
-&kp LSHFT  &LongPress LC(Z) Z    &LongPress LC(X) X  &LongPress LC(C) C  &LongPress LC(V) V       &kp B   &trans    &trans  &kp N   &kp M                &DbTap_Comma       &DbTap_Period      &DbTap_Underscore      &DbTap_Quote
-                                                     &kp LALT            &kp LGUI                 &mo 1   &trans    &trans  &mo 2   &kp BSPC             &kp RGUI
+&kp ESC    &kp N1                &kp N2              &kp N3              &kp N4                   &kp N5                    &kp N6              &kp N7               &kp N8             &kp N9             &kp N0                 &trans
+&kp TAB    &kp Q                 &LongPress LC(W) W  &kp E               &kp R                    &kp T                     &kp Y               &kp U                &kp I              &kp O              &kp P                  &trans
+&kp LCTRL  &HM_L LEFT_CONTROL A  &HM_L LEFT_ALT S    &HM_L LEFT_GUI D    &HR_ShiftL LEFT_SHIFT F  &kp G                     &kp H               &HM_R RIGHT_SHIFT J  &HM_R RIGHT_GUI K  &HM_R RIGHT_ALT L  &HM_R RIGHT_CONTROL H  &DbTap_Exclam
+&kp LSHFT  &LongPress LC(Z) Z    &LongPress LC(X) X  &LongPress LC(C) C  &LongPress LC(V) V       &kp B   &trans    &trans  &LongPress RC(N) N  &kp M                &DbTap_Comma       &DbTap_Period      &DbTap_Underscore      &DbTap_Quote
+                                                     &kp LALT            &kp LGUI                 &mo 1   &trans    &trans  &mo 2               &kp BSPC             &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
