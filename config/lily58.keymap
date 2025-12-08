@@ -119,14 +119,12 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp N1                &kp N2              &kp N3              &kp N4                   &kp N5                       &kp N6              &kp N7                                         &kp N8             &kp N9             &kp N0                      &LongPress C_VOLUME_UP PAGE_UP
-&kp TAB         &kp Q                 &LongPress LC(W) W  &kp E               &kp R                    &kp T                        &kp Y               &kp U                                          &kp I              &kp O              &kp P                       &LongPress C_VOL_DN PAGE_DOWN
-&kp LEFT_SHIFT  &HM_L LEFT_CONTROL A  &HM_L LEFT_ALT S    &HM_L LEFT_GUI D    &HR_ShiftL LEFT_SHIFT F  &kp G                        &kp H               &HM_R RIGHT_SHIFT J                            &HM_R RIGHT_GUI K  &HM_R RIGHT_ALT L  &HM_R RIGHT_CONTROL DELETE  &DbTap_Exclam
-&kp CAPS        &LongPress LC(Z) Z    &LongPress LC(X) X  &LongPress LC(C) C  &LongPress LC(V) V       &kp B      &trans    &trans  &LongPress RC(N) N  &kp M                                          &DbTap_Comma       &DbTap_Period      &DbTap_Underscore           &DbTap_Quote
-                                                          &tog 1              &kp ENTER                &kp SPACE  &trans    &trans  &kp BACKSPACE       &LongPress RIGHT_PARENTHESIS LEFT_PARENTHESIS  &tog 2
+&kp ESC         &kp N1              &kp N2                     &kp N3              &kp N4              &kp N5                       &kp N6              &kp N7             &kp N8        &kp N9         &kp N0             &LongPress C_VOLUME_UP PAGE_UP
+&kp TAB         &kp Q               &LongPress LC(W) W         &kp E               &kp R               &kp T                        &kp Y               &kp U              &kp I         &kp O          &kp P              &LongPress C_VOL_DN PAGE_DOWN
+&kp LEFT_SHIFT  &kp A               &LongPress LC(LEFT_ALT) S  &kp D               &kp F               &kp G                        &kp H               &kp J              &kp K         &kp L          &DbTap_Quote       &DbTap_Exclam
+&kp CAPS        &LongPress LC(Z) Z  &LongPress LC(X) X         &LongPress LC(C) C  &LongPress LC(V) V  &kp B      &trans    &trans  &LongPress RC(N) N  &kp M              &DbTap_Comma  &DbTap_Period  &DbTap_Underscore  &kp LEFT_GUI
+                                                               &tog 1              &kp ENTER           &kp SPACE  &trans    &trans  &kp BACKSPACE       &kp RIGHT_CONTROL  &tog 2
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         NumPad {
