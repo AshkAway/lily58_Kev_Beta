@@ -103,6 +103,13 @@
             hold-trigger-key-positions = <10 11 19 20 21 22 23 31 32 33 34 35 45 46 47 48 49 55 56 57 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 54 55 56 57>;
             flavor = "tap-preferred";
         };
+
+        DbTap_Page: DbTap_Page {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DBTAP_PAGE";
+            #binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp PG_UP>;
+        };
     };
 
     keymap {
@@ -119,11 +126,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &mo 3               &kp AT_SIGN         &kp HASH            &kp DOLLAR          &kp PERCENT                    &kp CARET     &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_GUI       &LongPress C_VOLUME_UP PAGE_UP
-&kp TAB         &kp Q               &kp W               &kp E               &kp R               &kp T                          &kp Y         &kp U          &kp I                 &kp O                  &kp P              &LongPress C_VOL_DN PAGE_DOWN
-&kp LEFT_SHIFT  &kp A               &LongPress LC(S) S  &kp D               &kp F               &kp G                          &kp H         &kp J          &kp K                 &kp L                  &DbTap_Quote       &DbTap_Exclam
-&kp CAPS        &LongPress LC(Z) Z  &LongPress LC(X) X  &LongPress LC(C) C  &LongPress LC(V) V  &kp B        &trans    &trans  &kp N         &kp M          &DbTap_Comma          &DbTap_Period          &DbTap_Underscore  &kp RIGHT_CONTROL
-                                                        &tog 1              &kp SPACE           &kp ENTER    &trans    &trans  &kp LEFT_ALT  &kp BACKSPACE  &tog 2
+&kp ESC         &mo 3               &kp AT_SIGN         &kp HASH            &kp DOLLAR          &kp PERCENT                    &kp CARET    &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_GUI       &LongPress C_VOLUME_UP PAGE_UP
+&kp TAB         &kp Q               &kp W               &kp E               &kp R               &kp T                          &kp Y        &kp U          &kp I                 &kp O                  &kp P              &LongPress C_VOL_DN PAGE_DOWN
+&kp LEFT_SHIFT  &kp A               &LongPress LC(S) S  &kp D               &kp F               &kp G                          &kp H        &kp J          &kp K                 &kp L                  &DbTap_Quote       &DbTap_Exclam
+&mo 1           &LongPress LC(Z) Z  &LongPress LC(X) X  &LongPress LC(C) C  &LongPress LC(V) V  &kp B        &trans    &trans  &kp N        &kp M          &DbTap_Comma          &DbTap_Period          &DbTap_Underscore  &kp RIGHT_CONTROL
+                                                        &kp LEFT_ALT        &kp SPACE           &kp ENTER    &trans    &trans  &DbTap_Page  &kp BACKSPACE  &kp LEFT_GUI
             >;
         };
 
