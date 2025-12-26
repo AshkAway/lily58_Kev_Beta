@@ -126,21 +126,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &LongPress EXCL NUMBER_1  &LongPress AT NUMBER_2  &LongPress HASH NUMBER_3  &LongPress DOLLAR NUMBER_4  &LongPress PERCENT N5                    &LongPress CARET NUMBER_6  &LongPress AMPERSAND N7   &LongPress ASTERISK N8  &LongPress LEFT_PARENTHESIS N9  &LongPress RIGHT_PARENTHESIS N0  &tog 2
-&kp TAB         &kp Q                     &kp W                   &kp E                     &kp R                       &kp T                                    &kp Y                      &kp U                     &kp I                   &kp O                           &kp P                            &LongPress C_VOL_DN C_VOLUME_UP
-&kp LEFT_SHIFT  &kp A                     &LongPress LC(S) S      &kp D                     &HR_ShiftL LEFT_SHIFT F     &kp G                                    &kp H                      &HR_ShiftL RIGHT_SHIFT J  &kp K                   &kp L                           &DbTap_Quote                     &DbTap_Question
-&mo 1           &LongPress LC(Z) Z        &LongPress LC(X) X      &LongPress LC(C) C        &LongPress LC(V) V          &kp B                  &trans    &trans  &kp N                      &kp M                     &DbTap_Comma            &DbTap_Period                   &DbTap_Underscore                &kp RIGHT_CONTROL
-                                                                  &kp LEFT_ALT              &kp SPACE                   &kp ENTER              &trans    &trans  &DbTap_Page                &kp BACKSPACE             &kp LEFT_GUI
-            >;
-        };
-
-        Arrows {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans          &trans           &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESC  &LongPress EXCL NUMBER_1  &LongPress AT NUMBER_2  &LongPress HASH NUMBER_3  &LongPress DOLLAR NUMBER_4  &LongPress PERCENT N5                    &LongPress CARET NUMBER_6  &LongPress AMPERSAND N7   &LongPress ASTERISK N8  &LongPress LEFT_PARENTHESIS N9  &LongPress RIGHT_PARENTHESIS N0  &tog 1
+&kp TAB  &kp Q                     &kp W                   &kp E                     &kp R                       &kp T                                    &kp Y                      &kp U                     &kp I                   &kp O                           &kp P                            &LongPress C_VOL_DN C_VOLUME_UP
+&mo 3    &kp A                     &LongPress LC(S) S      &kp D                     &HR_ShiftL LEFT_SHIFT F     &kp G                                    &kp H                      &HR_ShiftL RIGHT_SHIFT J  &kp K                   &kp L                           &DbTap_Quote                     &DbTap_Question
+&mo 2    &LongPress LC(Z) Z        &LongPress LC(X) X      &LongPress LC(C) C        &LongPress LC(V) V          &kp B                  &trans    &trans  &kp N                      &kp M                     &DbTap_Comma            &DbTap_Period                   &DbTap_Underscore                &kp RIGHT_CONTROL
+                                                           &kp LEFT_ALT              &kp SPACE                   &kp ENTER              &trans    &trans  &DbTap_Page                &kp BACKSPACE             &kp LEFT_GUI
             >;
         };
 
@@ -158,11 +148,21 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &trans  &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I   &kp O   &kp P   &trans
 &trans  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K   &kp L   &trans  &trans
-&mo 1   &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &trans  &trans  &trans  &trans
+&mo 2   &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Arrows {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans          &trans           &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
 
         NumPad {
@@ -176,11 +176,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1  &kp F2                &kp F3                 &kp F4     &kp F5         &kp F6                              &trans   &trans  &kp N7    &kp N8  &kp N9   &kp FSLH
-&kp F7  &kp F8                &kp F9                 &kp F10    &kp F11        &kp F12                             &trans   &trans  &kp N4    &kp N5  &kp N6   &kp STAR
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET  &kp LESS_THAN  &kp GREATER_THAN                    &trans   &trans  &kp N1    &kp N2  &kp N3   &kp MINUS
-&trans  &trans                &trans                 &trans     &trans         &trans            &trans    &trans  &trans   &trans  &kp BSPC  &kp N0  &kp DOT  &kp PLUS
-                                                     &trans     &trans         &trans            &trans    &trans  &kp ESC  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp N7    &kp N8  &kp N9   &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp N4    &kp N5  &kp N6   &kp STAR
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp N1    &kp N2  &kp N3   &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp BSPC  &kp N0  &kp DOT  &kp PLUS
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
