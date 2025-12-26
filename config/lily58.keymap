@@ -60,7 +60,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53>;
@@ -72,7 +72,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             hold-while-undecided;
             hold-trigger-on-release;
             hold-trigger-key-positions = <10 11 19 20 21 22 23 31 32 33 34 35 45 46 47 48 49 55 56 57 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 54 55 56 57>;
@@ -126,21 +126,21 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &LongPress EXCL NUMBER_1  &LongPress AT NUMBER_2  &LongPress HASH NUMBER_3  &LongPress DOLLAR NUMBER_4  &LongPress PERCENT N5                    &LongPress CARET NUMBER_6  &LongPress AMPERSAND N7  &LongPress ASTERISK N8  &LongPress LEFT_PARENTHESIS N9  &LongPress RIGHT_PARENTHESIS N0  &tog 2
-&kp TAB         &kp Q                     &kp W                   &kp E                     &kp R                       &kp T                                    &kp Y                      &kp U                    &kp I                   &kp O                           &kp P                            &LongPress C_VOL_DN C_VOLUME_UP
-&kp LEFT_SHIFT  &kp A                     &LongPress LC(S) S      &kp D                     &kp F                       &kp G                                    &kp H                      &kp J                    &kp K                   &kp L                           &DbTap_Quote                     &DbTap_Exclam
-&mo 1           &LongPress LC(Z) Z        &LongPress LC(X) X      &LongPress LC(C) C        &LongPress LC(V) V          &kp B                  &trans    &trans  &kp N                      &kp M                    &DbTap_Comma            &DbTap_Period                   &DbTap_Underscore                &kp RIGHT_CONTROL
-                                                                  &kp LEFT_ALT              &kp SPACE                   &kp ENTER              &trans    &trans  &DbTap_Page                &kp BACKSPACE            &kp LEFT_GUI
+&kp ESC         &LongPress EXCL NUMBER_1  &LongPress AT NUMBER_2  &LongPress HASH NUMBER_3  &LongPress DOLLAR NUMBER_4  &LongPress PERCENT N5                    &LongPress CARET NUMBER_6  &LongPress AMPERSAND N7   &LongPress ASTERISK N8  &LongPress LEFT_PARENTHESIS N9  &LongPress RIGHT_PARENTHESIS N0  &tog 2
+&kp TAB         &kp Q                     &kp W                   &kp E                     &kp R                       &kp T                                    &kp Y                      &kp U                     &kp I                   &kp O                           &kp P                            &LongPress C_VOL_DN C_VOLUME_UP
+&kp LEFT_SHIFT  &kp A                     &LongPress LC(S) S      &kp D                     &HR_ShiftL LEFT_SHIFT F     &kp G                                    &kp H                      &HR_ShiftL RIGHT_SHIFT J  &kp K                   &kp L                           &DbTap_Quote                     &DbTap_Exclam
+&mo 1           &LongPress LC(Z) Z        &LongPress LC(X) X      &LongPress LC(C) C        &LongPress LC(V) V          &kp B                  &trans    &trans  &kp N                      &kp M                     &DbTap_Comma            &DbTap_Period                   &DbTap_Underscore                &kp RIGHT_CONTROL
+                                                                  &kp LEFT_ALT              &kp SPACE                   &kp ENTER              &trans    &trans  &DbTap_Page                &kp BACKSPACE             &kp LEFT_GUI
             >;
         };
 
         Arrows {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans          &trans           &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
